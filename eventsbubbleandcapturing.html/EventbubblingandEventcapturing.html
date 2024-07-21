@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bubbling and capturing</title>
+    <style>
+        div {
+         padding:30px;
+         min-width: 100px;
+         border: 1px solid black;
+         min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="grandparent">
+        <div id="parent">
+            <div id="child">
+            </div>
+        </div>
+    </div>
+    <script src="eventsbubble.js"></script>
+    
+</body>
+</html>
+<!-- Bubbling niche se upar and Capturing from uper se niche  -->
+<!-- addeventlistener("click",()=>{
+
+},usecapture) -->
+<!-- in above examples use capture will either true or false if true events are capture and if false event bubble 
+    ow to up-->
+<!-- in w3c model cycle going continuosly like movinf up and down but control by  usecapture methods -->
+<!--  event bubbling used by browsers by defalut if we dont usecapture-->
